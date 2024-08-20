@@ -1,0 +1,13 @@
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\bin\Debug\net8.0\BookStream.ServiceDefaults.deps.json
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\bin\Debug\net8.0\BookStream.ServiceDefaults.dll
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\bin\Debug\net8.0\BookStream.ServiceDefaults.pdb
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\obj\Debug\net8.0\BookStream.ServiceDefaults.csproj.AssemblyReference.cache
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\obj\Debug\net8.0\BookStream.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\obj\Debug\net8.0\BookStream.ServiceDefaults.AssemblyInfoInputs.cache
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\obj\Debug\net8.0\BookStream.ServiceDefaults.AssemblyInfo.cs
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\obj\Debug\net8.0\BookStream.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\obj\Debug\net8.0\BookStream.ServiceDefaults.sourcelink.json
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\obj\Debug\net8.0\BookStream.ServiceDefaults.dll
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\obj\Debug\net8.0\refint\BookStream.ServiceDefaults.dll
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\obj\Debug\net8.0\BookStream.ServiceDefaults.pdb
+C:\Dev\BookStream\BookStream\BookStream.ServiceDefaults\obj\Debug\net8.0\ref\BookStream.ServiceDefaults.dll

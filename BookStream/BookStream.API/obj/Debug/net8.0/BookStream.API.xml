@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BookStream.API</name>
+    </assembly>
+    <members>
+        <member name="M:BookStream.API.Controllers.BookController.GetAll">
+            <summary>
+            Listar todos os livros cadastrados
+            </summary>
+            <returns>Todos os livros cadastrados até o momento</returns>
+            <response code="201">Success</response>
+        </member>
+    </members>
+</doc>

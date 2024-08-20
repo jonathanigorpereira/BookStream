@@ -1,0 +1,12 @@
+C:\Dev\BookStream\BookStream\BookStream.Core\bin\Debug\net8.0\BookStream.Core.deps.json
+C:\Dev\BookStream\BookStream\BookStream.Core\bin\Debug\net8.0\BookStream.Core.dll
+C:\Dev\BookStream\BookStream\BookStream.Core\bin\Debug\net8.0\BookStream.Core.pdb
+C:\Dev\BookStream\BookStream\BookStream.Core\obj\Debug\net8.0\BookStream.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\BookStream\BookStream\BookStream.Core\obj\Debug\net8.0\BookStream.Core.AssemblyInfoInputs.cache
+C:\Dev\BookStream\BookStream\BookStream.Core\obj\Debug\net8.0\BookStream.Core.AssemblyInfo.cs
+C:\Dev\BookStream\BookStream\BookStream.Core\obj\Debug\net8.0\BookStream.Core.csproj.CoreCompileInputs.cache
+C:\Dev\BookStream\BookStream\BookStream.Core\obj\Debug\net8.0\BookStream.Core.sourcelink.json
+C:\Dev\BookStream\BookStream\BookStream.Core\obj\Debug\net8.0\BookStream.Core.dll
+C:\Dev\BookStream\BookStream\BookStream.Core\obj\Debug\net8.0\refint\BookStream.Core.dll
+C:\Dev\BookStream\BookStream\BookStream.Core\obj\Debug\net8.0\BookStream.Core.pdb
+C:\Dev\BookStream\BookStream\BookStream.Core\obj\Debug\net8.0\ref\BookStream.Core.dll
