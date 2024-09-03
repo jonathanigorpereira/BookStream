@@ -20,27 +20,30 @@ public class InsertBookValidator : AbstractValidator<InsertBookCommand>
             .NotEmpty()
                 .WithMessage("O título do livro não pode estar vazio.")
             .MaximumLength(200)
-                .WithMessage("Você ultrapassou o limite de caracteres para o título.")
-            .Matches(@"^[a-zA-Z0-9\s]*$")
-                .WithMessage("O campo não pode conter caracteres especiais.");
+                .WithMessage("Você ultrapassou o limite de caracteres para o título.");
+        //.Matches(@"^[a-zA-Z0-9\s]*$")
+        //    .WithMessage("O campo não pode conter caracteres especiais.");
 
         RuleFor(livro => livro.Synopsis)
             .NotEmpty()
                 .WithMessage("O campo de sínopse não pode estar vazio .")
             .MaximumLength(375)
-                .WithMessage("Você ultrapssou o limite de 5 linhas.")
-            .Matches(@"^[a-zA-Z0-9\s]*$")
-                .WithMessage("O campo não pode conter caracteres especiais.");
+                .WithMessage("Você ultrapssou o limite de 5 linhas.");
+            //.Matches(@"^[a-zA-Z0-9\s]*$")
+            //    .WithMessage("O campo não pode conter caracteres especiais.");
 
-        RuleFor(livro => livro.Author)
-            .NotEmpty()
-                .WithMessage("O nome do autor deve ser informado")
-            .MaximumLength(100)
-                .WithMessage("Você ultrapassou a quantidade de caracteres permitidos para o campo Author.")
-            .Matches(@"^[a-zA-Zà-úÀ-ÚçÇñÑ'\- ]{2,50}$")
-                .WithMessage("Nome do autor inválido. Contém caracteres especiais ou números.")
-            .Matches(@"^[a-zA-Z0-9\s]*$")
-                .WithMessage("O campo não pode conter caracteres especiais.");
+        //RuleFor(livro => livro.Author)
+        //    .NotEmpty()
+        //        .WithMessage("O nome do autor deve ser informado")
+        //    .MaximumLength(100)
+        //        .WithMessage("Você ultrapassou a quantidade de caracteres permitidos para o campo Author.")
+        //    .Matches(@"^[a-zA-Zà-úÀ-ÚçÇñÑ'\- ]{2,50}$")
+        //        .WithMessage("Nome do autor inválido. Contém caracteres especiais ou números.")
+        //    .Matches(@"^[a-zA-Z0-9\s]*$")
+        //        .WithMessage("O campo não pode conter caracteres especiais.");
+        RuleFor(livro => livro.AuthorId)
+            .GreaterThan(0)
+                .WithMessage("O autor do livro deve ser válido.");
 
         RuleFor(livro => livro.Publisher)
             .NotEmpty()

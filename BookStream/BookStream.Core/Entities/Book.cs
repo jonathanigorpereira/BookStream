@@ -1,6 +1,4 @@
-﻿using BookStream.Core.Enums;
-
-namespace BookStream.Core.Entities;
+﻿namespace BookStream.Core.Entities;
 
 public class Book : BaseEntity
 {
@@ -12,7 +10,7 @@ public class Book : BaseEntity
     public Book(string code,
                 string title,
                 string synopsis,
-                string author,
+                int authorId,
                 string publisher,
                 int idGenre,
                 string iSBN,
@@ -22,7 +20,7 @@ public class Book : BaseEntity
         Code = code;
         Title = title;
         Synopsis = synopsis;
-        Author = author;
+        AuthorId = authorId;
         Publisher = publisher;
         IdGenre = idGenre;
         UnformatedISBN = iSBN;
@@ -33,7 +31,8 @@ public class Book : BaseEntity
     public string Code { get; private set; }
     public string Title { get; private set; }
     public string Synopsis { get; private set; }
-    public string Author { get; private set; }
+    public int AuthorId {  get; private set; }
+    public Author Author { get; private set; }
     public string Publisher { get; private set; }
     public int IdGenre { get; private set; }
     public BookGenre Genre { get; private set; }

@@ -1,9 +1,4 @@
 ﻿using BookStream.Core.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookStream.Application.Models.ViewModels;
 public class BookItemViewModel
@@ -43,6 +38,6 @@ public class BookItemViewModel
     public string AgeRating { get; private set; }
 
     public static BookItemViewModel FromEntity(Book book)
-        => new(book.Id, book.Code, book.Title, book.Synopsis, book.Author,
+        => new(book.Id, book.Code, book.Title, book.Synopsis, book.Author.Name,
               book.Publisher, book.Genre.Genre, book.UnformatedISBN, book.YearOfPublication, book.AgeRating.Description);
 }

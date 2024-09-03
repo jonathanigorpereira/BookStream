@@ -1,14 +1,10 @@
-﻿using BookStream.Application.Commands.BookCommands.InsertBook;
+﻿using BookStream.Application.Commands.AuthorCommands.InsertAuthor;
+using BookStream.Application.Commands.BookCommands.InsertBook;
 using BookStream.Application.Models.ViewModels;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookStream.Application;
 public static class ApplicationModule
@@ -27,7 +23,9 @@ public static class ApplicationModule
         services.AddMediatR(config =>
             config.RegisterServicesFromAssemblyContaining<InsertBookCommand>()
         );
-
+        services.AddMediatR(config =>
+           config.RegisterServicesFromAssemblyContaining<InsertAuthorCommand>()
+       );
 
         services.AddTransient<IPipelineBehavior<InsertBookCommand,
                                                 ResultViewModel<int>>,

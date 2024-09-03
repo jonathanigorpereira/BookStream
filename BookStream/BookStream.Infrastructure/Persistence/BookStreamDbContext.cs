@@ -12,6 +12,7 @@ public class BookStreamDbContext : DbContext
 
     public DbSet<Book> Books { get; set; }
     public DbSet<BookGenre> Genres { get; set; }
+    public DbSet<Author> Authors { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -28,9 +29,25 @@ public class BookStreamDbContext : DbContext
             });
 
         builder
+            .Entity<Author>(a =>
+            {
+                a.HasKey(a => a.Id);
+
+                a.HasMany(a=>a.Books)
+                    .WithOne(b=>b.Author)
+                    .HasForeignKey(b=>b.AuthorId)
+                    .OnDelete(DeleteBehavior.Restrict);
+            });
+
+        builder
             .Entity<Book>(s =>
             {
                 s.HasKey(s=> s.Id);
+
+                //s.HasOne(g => g.Author)
+                //   .WithMany()
+                //   .HasForeignKey(g => g.AuthorId)
+                //   .OnDelete(DeleteBehavior.Restrict);
 
                 s.HasOne(g => g.Genre)
                     .WithMany()

@@ -1,12 +1,6 @@
 ﻿using BookStream.Application.Models.ViewModels;
 using BookStream.Core.Repositories;
-using BookStream.Infrastructure.Persistence;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookStream.Application.Commands.BookCommands.InsertBook
 {

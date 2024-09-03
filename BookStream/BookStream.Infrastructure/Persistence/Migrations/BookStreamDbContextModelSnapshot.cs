@@ -45,6 +45,38 @@ namespace BookStream.Infrastructure.Persistence.Migrations
                     b.ToTable("AgeRating");
                 });
 
+            modelBuilder.Entity("BookStream.Core.Entities.Author", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("Active")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("BirthDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeathDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Authors");
+                });
+
             modelBuilder.Entity("BookStream.Core.Entities.Book", b =>
                 {
                     b.Property<int>("Id")
@@ -53,9 +85,8 @@ namespace BookStream.Infrastructure.Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Author")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("AuthorId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Code")
                         .IsRequired()
@@ -94,6 +125,8 @@ namespace BookStream.Infrastructure.Persistence.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AuthorId");
+
                     b.HasIndex("IdAgeRating");
 
                     b.HasIndex("IdGenre");
@@ -126,6 +159,12 @@ namespace BookStream.Infrastructure.Persistence.Migrations
 
             modelBuilder.Entity("BookStream.Core.Entities.Book", b =>
                 {
+                    b.HasOne("BookStream.Core.Entities.Author", "Author")
+                        .WithMany("Books")
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
                     b.HasOne("BookStream.Core.Entities.AgeRating", "AgeRating")
                         .WithMany()
                         .HasForeignKey("IdAgeRating")
@@ -140,7 +179,14 @@ namespace BookStream.Infrastructure.Persistence.Migrations
 
                     b.Navigation("AgeRating");
 
+                    b.Navigation("Author");
+
                     b.Navigation("Genre");
+                });
+
+            modelBuilder.Entity("BookStream.Core.Entities.Author", b =>
+                {
+                    b.Navigation("Books");
                 });
 #pragma warning restore 612, 618
         }

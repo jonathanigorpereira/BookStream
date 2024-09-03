@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BookStream.Application.Models.ViewModels;
+﻿namespace BookStream.Application.Models.ViewModels;
 public class ResultViewModel
 {
     public ResultViewModel(bool isSuccess = true, string message = "")

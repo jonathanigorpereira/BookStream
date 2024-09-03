@@ -1,3 +1,12 @@
+C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\x86\KernelTraceControl.dll
+C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\x86\KernelTraceControl.Win61.dll
+C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\x86\msdia140.dll
+C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\amd64\KernelTraceControl.dll
+C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\amd64\msdia140.dll
+C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\arm64\KernelTraceControl.dll
+C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\arm64\msdia140.dll
+C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\TraceReloggerLib.dll
+C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\Dia2Lib.dll
 C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\BookStream.Application.deps.json
 C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\BookStream.Application.dll
 C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\BookStream.Application.pdb
@@ -18,12 +27,3 @@ C:\Dev\BookStream\BookStream\BookStream.Application\obj\Debug\net8.0\BookStream.
 C:\Dev\BookStream\BookStream\BookStream.Application\obj\Debug\net8.0\refint\BookStream.Application.dll
 C:\Dev\BookStream\BookStream\BookStream.Application\obj\Debug\net8.0\BookStream.Application.pdb
 C:\Dev\BookStream\BookStream\BookStream.Application\obj\Debug\net8.0\ref\BookStream.Application.dll
-C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\x86\KernelTraceControl.dll
-C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\x86\KernelTraceControl.Win61.dll
-C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\x86\msdia140.dll
-C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\amd64\KernelTraceControl.dll
-C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\amd64\msdia140.dll
-C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\arm64\KernelTraceControl.dll
-C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\arm64\msdia140.dll
-C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\TraceReloggerLib.dll
-C:\Dev\BookStream\BookStream\BookStream.Application\bin\Debug\net8.0\Dia2Lib.dll

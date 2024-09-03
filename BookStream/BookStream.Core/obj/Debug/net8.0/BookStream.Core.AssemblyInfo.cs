@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookStream.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fbe57048439078e9b74dfbfc5dcd8b6ac582001")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d70ad9fa50ef7518376ce83ddbd805e01731436b")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookStream.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookStream.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

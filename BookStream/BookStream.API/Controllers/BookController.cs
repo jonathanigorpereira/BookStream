@@ -1,7 +1,7 @@
 ﻿using BookStream.Application.Commands.BookCommands.InsertBook;
 using BookStream.Application.Queries.QueryBook.GetAll;
+using BookStream.Application.Queries.QueryBook.GetById;
 using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookStream.API.Controllers;
@@ -31,7 +31,9 @@ public class BookController : ControllerBase
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {
-        return Ok("Ok");
+        var book = await _mediator.Send(new GetBookByIdQuery(id));
+
+        return Ok(book);
     }
 
     [HttpPost]

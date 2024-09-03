@@ -10,9 +10,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<IConfigService, ConfigService>();
 
-
-
-
 builder.Services
     .AddApplication()
     .AddInfrastructure(builder.Configuration);
@@ -37,7 +34,7 @@ builder.Services.AddSwaggerGen(c =>
             Url = new Uri("https://www.linkedin.com/in/jonathan-igor-bockorny-pereira/")
         }
     });
-
+    
     var xmFile = "BookStream.API.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmFile);  
     c.IncludeXmlComments(xmlPath);
