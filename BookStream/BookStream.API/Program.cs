@@ -40,8 +40,6 @@ builder.Services.AddSwaggerGen(c =>
     c.IncludeXmlComments(xmlPath);
 });
 
-builder.AddServiceDefaults();
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -52,11 +50,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
-BenchmarkRunner.Run<BookRepository>();
 
 await app.RunAsync();

@@ -1,0 +1,11 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/BookStream/.idea
+/BookStream/.vs/BookStream/FileContentIndex
+/BookStream/.vs/BookStream
+/BookStream/BookStream.API/BenchmarkDotNet.Artifacts
+*/bin
+/BookStream/.vs/ProjectEvaluation

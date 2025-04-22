@@ -23,7 +23,11 @@ public static class InfrastructureModule
         var connectionString = configuration.GetConnectionString("BookStreamCs");
 
         services
-            .AddDbContext<BookStreamDbContext>(o => o.UseSqlServer(connectionString));
+            .AddDbContext<BookStreamDbContext>(o =>
+            o.UseSqlServer(connectionString)
+                .EnableSensitiveDataLogging()
+                .EnableDetailedErrors()
+            );
 
         return services;
 

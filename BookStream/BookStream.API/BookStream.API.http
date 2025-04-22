@@ -1,6 +1,6 @@
-@BookStream.API_HostAddress = http://localhost:5130
+@BookStream.API_HostAddress = http://localhost:5000
 
-GET {{BookStream.API_HostAddress}}/weatherforecast/
+GET {{BookStream.API_HostAddress}}/api/Book
 Accept: application/json
 
 ###

@@ -2,19 +2,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStream.AppHost", "BookStream.AppHost\BookStream.AppHost.csproj", "{8739CD7E-78AC-44C6-988B-E17419057AF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStream.API", "BookStream.API\BookStream.API.csproj", "{F0D3C481-D027-4C1F-AE07-1E91B724E656}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStream.ServiceDefaults", "BookStream.ServiceDefaults\BookStream.ServiceDefaults.csproj", "{F8AB3AFD-50B9-44EC-96CD-CD38A9CD879B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStream.Application", "BookStream.Application\BookStream.Application.csproj", "{6D78D0E9-DF8C-4A09-92DF-3901545ECED3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStream.API", "BookStream.API\BookStream.API.csproj", "{F0D3C481-D027-4C1F-AE07-1E91B724E656}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStream.Core", "BookStream.Core\BookStream.Core.csproj", "{65FF72BB-CAFE-4037-AA5B-8A25D9F49C88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStream.Application", "BookStream.Application\BookStream.Application.csproj", "{6D78D0E9-DF8C-4A09-92DF-3901545ECED3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStream.Core", "BookStream.Core\BookStream.Core.csproj", "{65FF72BB-CAFE-4037-AA5B-8A25D9F49C88}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Aspire", "Aspire", "{F818F84A-D469-437D-B875-C45CB4BA5F0B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookStream.Infrastructure", "BookStream.Infrastructure\BookStream.Infrastructure.csproj", "{BAC7D193-369F-4FB5-A80C-AB5E60212103}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStream.Infrastructure", "BookStream.Infrastructure\BookStream.Infrastructure.csproj", "{BAC7D193-369F-4FB5-A80C-AB5E60212103}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,14 +16,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8739CD7E-78AC-44C6-988B-E17419057AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8739CD7E-78AC-44C6-988B-E17419057AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8739CD7E-78AC-44C6-988B-E17419057AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8739CD7E-78AC-44C6-988B-E17419057AF7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F8AB3AFD-50B9-44EC-96CD-CD38A9CD879B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F8AB3AFD-50B9-44EC-96CD-CD38A9CD879B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F8AB3AFD-50B9-44EC-96CD-CD38A9CD879B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F8AB3AFD-50B9-44EC-96CD-CD38A9CD879B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F0D3C481-D027-4C1F-AE07-1E91B724E656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F0D3C481-D027-4C1F-AE07-1E91B724E656}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0D3C481-D027-4C1F-AE07-1E91B724E656}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,10 +35,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{8739CD7E-78AC-44C6-988B-E17419057AF7} = {F818F84A-D469-437D-B875-C45CB4BA5F0B}
-		{F8AB3AFD-50B9-44EC-96CD-CD38A9CD879B} = {F818F84A-D469-437D-B875-C45CB4BA5F0B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A267D174-9356-4A13-9A9F-EC350DD76711}

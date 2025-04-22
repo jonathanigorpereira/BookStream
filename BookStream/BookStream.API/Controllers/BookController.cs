@@ -28,7 +28,7 @@ public class BookController : ControllerBase
         return Ok(result);
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("{id:int}")]
     public async Task<IActionResult> GetById(int id)
     {
         var book = await _mediator.Send(new GetBookByIdQuery(id));
@@ -48,15 +48,15 @@ public class BookController : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = results.Result }, command);
     }
 
-    [HttpPut("{id}/Return")]
-    public async Task<IActionResult>Put(int id)
+    [HttpPut("{id:int}/Return")]
+    public Task<IActionResult>Put(int id)
     {
-        return NoContent();
+        return Task.FromResult<IActionResult>(NoContent());
     }
 
-    [HttpDelete("Remove/{id}")]
-    public async Task<IActionResult> Delete(int id)
+    [HttpDelete("Remove/{id:int}")]
+    public Task<IActionResult> Delete(int id)
     {
-        return NoContent();
+        return Task.FromResult<IActionResult>(NoContent());
     }
 }

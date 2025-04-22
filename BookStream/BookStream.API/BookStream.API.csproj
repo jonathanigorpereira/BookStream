@@ -9,15 +9,17 @@
   <PropertyGroup>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <UserSecretsId>67936a85-5b8d-4983-8be4-cc1ebf4f275b</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BenchmarkDotNet" Version="0.14.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
@@ -25,7 +27,6 @@
     <ProjectReference Include="..\BookStream.Application\BookStream.Application.csproj" />
     <ProjectReference Include="..\BookStream.Core\BookStream.Core.csproj" />
     <ProjectReference Include="..\BookStream.Infrastructure\BookStream.Infrastructure.csproj" />
-    <ProjectReference Include="..\BookStream.ServiceDefaults\BookStream.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>

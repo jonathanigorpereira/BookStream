@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BookStream.Core\BookStream.Core.csproj" />
-    <ProjectReference Include="..\BookStream.ServiceDefaults\BookStream.ServiceDefaults.csproj" />
   </ItemGroup>
 
   <ItemGroup>

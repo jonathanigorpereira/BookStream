@@ -38,6 +38,7 @@ public class BookRepository : IBookRepository
     public async Task<List<Book>> GetAllAsync(CancellationToken cancellationToken)
     {
         var books = await _context.Books
+                        .Include(b=>b.Author)
                         .Include(b => b.Genre)
                         .Include(b=> b.AgeRating)
                         .Where(b => !b.IsDeleted)
@@ -48,7 +49,11 @@ public class BookRepository : IBookRepository
 
     public async Task<Book?> GetByIdAsync(int id, CancellationToken cancellationToken)
     {
-        return await _context.Books.SingleOrDefaultAsync(p => p.Id == id, cancellationToken);
+        return await _context.Books
+                        .Include(b => b.Author)
+                        .Include(b => b.Genre)
+                        .Include(b => b.AgeRating)
+                        .SingleOrDefaultAsync(p => p.Id == id, cancellationToken);
     }
 
     public async Task UpdateAsync(Book book, CancellationToken cancellationToken)
